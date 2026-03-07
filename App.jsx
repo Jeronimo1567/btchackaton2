@@ -83,7 +83,7 @@ const CARD_DECK = [
     leccion: "Es el acto de mandar bitcoin de una 'cuenta' a otra; parecido a hacer una transferencia bancaria, pero usando direcciones de Bitcoin en lugar de cuentas de banco."
   },
   {
-    id: 6, name: "La Minería de Bitcoin", icon: "⛏️",
+    id: 6, name: "El Minero", icon: "⛏️",
     image: "images/06.png", audio: "audio/06.mp3",
     riddle: "Con sudor digital y poder de cómputo,\nbusca el número mágico, ¡nunca está difunto!\n¡La Minería!",
     question: "¿Qué hacen los mineros de Bitcoin?",
@@ -740,11 +740,18 @@ function CardVisual({ card, sizeClass }) {
         src={card.image}
         alt={card.name}
         className={sizeClass || 'card-img-sm'}
+        style={{ display: 'block' }}
         onError={() => setImgError(true)}
       />
     );
   }
-  return <span className={sizeClass === 'card-img-caller' ? 'text-5xl sm:text-6xl block' : 'text-2xl sm:text-3xl md:text-4xl'}>{card.icon}</span>;
+  const isCaller = sizeClass === 'card-img-caller';
+  return (
+    <div className={`flex items-center justify-center ${isCaller ? 'w-[140px] h-[180px] mx-auto rounded-lg' : 'w-[90%] rounded'}`}
+         style={{ aspectRatio: isCaller ? undefined : '3/4', background: 'linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%)', border: isCaller ? '3px solid #8B4513' : '2px solid #8B4513', boxShadow: isCaller ? '0 4px 12px rgba(0,0,0,0.3)' : 'none' }}>
+      <span className={isCaller ? 'text-5xl sm:text-6xl' : 'text-2xl sm:text-3xl'}>{card.icon}</span>
+    </div>
+  );
 }
 
 // ─── CONFETTI COMPONENT ──────────────────────────────────────────────────────
