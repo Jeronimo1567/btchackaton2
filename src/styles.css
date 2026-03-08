@@ -1,0 +1,250 @@
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes stampIn {
+  0% { transform: scale(3) rotate(-15deg); opacity: 0; }
+  60% { transform: scale(0.9) rotate(3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-6px); }
+  30%, 70% { transform: translateX(6px); }
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.6); }
+  50% { box-shadow: 0 0 0 12px rgba(218, 165, 32, 0); }
+}
+@keyframes glowWin {
+  0%, 100% { box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.8); }
+  50% { box-shadow: 0 0 24px 8px rgba(255, 215, 0, 1); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes callerEntrance {
+  from { opacity: 0; transform: translateY(-30px) rotateX(15deg); }
+  to { opacity: 1; transform: translateY(0) rotateX(0deg); }
+}
+@keyframes borderDance {
+  0% { border-color: #DAA520; }
+  33% { border-color: #8B0000; }
+  66% { border-color: #228B22; }
+  100% { border-color: #DAA520; }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slideInUp { animation: slideInUp 0.5s ease-out; }
+.animate-slideInRight { animation: slideInRight 0.4s ease-out; }
+.animate-stamp { animation: stampIn 0.4s ease-out forwards; }
+.animate-shake { animation: shake 0.5s ease-in-out; }
+.animate-pulse-gold { animation: pulse 1.5s ease-in-out infinite; }
+.animate-glow-win { animation: glowWin 0.6s ease-in-out infinite; }
+.animate-fadeIn { animation: fadeIn 0.5s ease-out; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-caller { animation: callerEntrance 0.6s ease-out; }
+.animate-border { animation: borderDance 3s linear infinite; }
+
+.loteria-card {
+  background: linear-gradient(135deg, #FFF8E7 0%, #F5E6C8 50%, #EDD9A3 100%);
+  border: 3px solid #8B4513;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.loteria-card::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgba(139, 69, 19, 0.3);
+  pointer-events: none;
+  border-radius: 4px;
+}
+.loteria-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.3);
+}
+.loteria-card.highlighted {
+  border-color: #DAA520;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.6);
+}
+.loteria-card.called-card {
+  border-color: #B8860B;
+  box-shadow: 0 0 8px rgba(218, 165, 32, 0.35);
+  background: linear-gradient(135deg, #FFF8E7 0%, #FFF0C8 50%, #FFEBA3 100%);
+}
+.loteria-card.marked {
+  border-color: #228B22;
+}
+
+.papel-picado {
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(218,165,32,0.08) 48%, rgba(218,165,32,0.08) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(139,0,0,0.06) 48%, rgba(139,0,0,0.06) 52%, transparent 52%);
+  background-size: 20px 20px;
+}
+
+.wood-texture {
+  background-color: #5C3317;
+  background-image:
+    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(0,0,0,0.05) 40px, rgba(0,0,0,0.05) 41px),
+    repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(255,255,255,0.02) 8px, rgba(255,255,255,0.02) 9px),
+    linear-gradient(180deg, #6B3A20 0%, #5C3317 30%, #4A2812 70%, #3D200E 100%);
+}
+
+.grain-overlay { position: relative; }
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.tile-border {
+  border-image: repeating-linear-gradient(45deg, #DAA520 0px, #DAA520 5px, #8B0000 5px, #8B0000 10px, #228B22 10px, #228B22 15px) 10;
+  border-width: 6px;
+  border-style: solid;
+}
+
+.frijolito {
+  width: 28px; height: 28px;
+  background: radial-gradient(ellipse at 40% 35%, #8B2500, #5C1A0A);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4), inset 2px 2px 4px rgba(255,255,255,0.1), 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.caller-card {
+  background: linear-gradient(135deg, #FFF8E7 0%, #F5E6C8 100%);
+  border: 4px solid #DAA520;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.btn-loteria {
+  background: linear-gradient(180deg, #DAA520 0%, #B8860B 100%);
+  color: #3D200E;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 700;
+  border: 2px solid #8B6914;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.3);
+  transition: all 0.2s;
+}
+.btn-loteria:hover {
+  background: linear-gradient(180deg, #F0C040 0%, #DAA520 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.4);
+}
+.btn-loteria:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.btn-loteria-outline {
+  background: transparent;
+  color: #DAA520;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 700;
+  border: 2px solid #DAA520;
+  transition: all 0.2s;
+}
+.btn-loteria-outline:hover {
+  background: rgba(218,165,32,0.1);
+}
+
+.modal-overlay {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+}
+
+.quiz-modal {
+  background: linear-gradient(135deg, #FFF8E7 0%, #F5E6C8 100%);
+  border: 4px solid #8B4513;
+}
+
+.option-btn {
+  background: linear-gradient(180deg, #FEFCF5 0%, #F5E6C8 100%);
+  border: 2px solid #8B4513;
+  transition: all 0.2s;
+  font-family: 'Instrument Serif', serif;
+}
+.option-btn:hover {
+  background: linear-gradient(180deg, #FFF0D0 0%, #F0D8A8 100%);
+  border-color: #DAA520;
+  transform: translateX(4px);
+}
+.option-btn.correct {
+  background: linear-gradient(180deg, #C6F6D5 0%, #9AE6B4 100%);
+  border-color: #228B22;
+}
+.option-btn.wrong {
+  background: linear-gradient(180deg, #FED7D7 0%, #FEB2B2 100%);
+  border-color: #8B0000;
+}
+
+* { box-sizing: border-box; }
+body { background: #3D200E; }
+
+.confetti-piece {
+  position: fixed;
+  width: 10px; height: 10px;
+  top: -10px;
+  animation: confetti 3s linear forwards;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+.card-img {
+  width: 100%;
+  height: auto;
+  max-height: 80%;
+  object-fit: cover;
+  border-radius: 6px;
+  aspect-ratio: 3/4;
+}
+.card-img-caller {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: 3px solid #8B4513;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.card-img-sm {
+  width: 90%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid #8B4513;
+}
+
+.level-card {
+  background: linear-gradient(135deg, #FFF8E7 0%, #F5E6C8 100%);
+  border: 3px solid #DAA520;
+  transition: all 0.3s;
+}
+.level-card:hover:not(.locked) {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(218,165,32,0.4);
+}
+.level-card.locked {
+  opacity: 0.5;
+  filter: grayscale(0.6);
+  cursor: not-allowed;
+  border-color: #666;
+}

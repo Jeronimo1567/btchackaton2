@@ -747,7 +747,7 @@ function CardVisual({ card, sizeClass }) {
   }
   const isCaller = sizeClass === 'card-img-caller';
   return (
-    <div className={`flex items-center justify-center ${isCaller ? 'w-[140px] h-[180px] mx-auto rounded-lg' : 'w-[90%] rounded'}`}
+    <div className={`flex items-center justify-center ${isCaller ? 'w-[174px] h-[249px] mx-auto rounded-lg' : 'w-[90%] rounded'}`}
          style={{ aspectRatio: isCaller ? undefined : '3/4', background: 'linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%)', border: isCaller ? '3px solid #8B4513' : '2px solid #8B4513', boxShadow: isCaller ? '0 4px 12px rgba(0,0,0,0.3)' : 'none' }}>
       <span className={isCaller ? 'text-5xl sm:text-6xl' : 'text-2xl sm:text-3xl'}>{card.icon}</span>
     </div>
@@ -1212,18 +1212,14 @@ function LevelSelectScreen({ onSelectLevel, onGoHome, xp }) {
               key={level.id}
               onClick={() => !level.locked && onSelectLevel(level.id)}
               disabled={level.locked}
-              className={`level-card rounded-xl p-5 w-full text-left flex items-center gap-4 ${level.locked ? 'locked' : ''}`}
+              className={`level-card rounded-xl p-6 w-full text-left flex items-center gap-4 ${level.locked ? 'locked' : ''}`}
             >
-              <div className="text-3xl flex-shrink-0 font-bold text-amber-800">
-                {level.id}
-              </div>
               <div className="flex-1">
-                <h3 style={FONT_SERIF} className="text-xl font-bold text-amber-900">
-                  Nivel {level.id}: {level.name}
+                <h3 style={FONT_SERIF} className="text-3xl sm:text-4xl font-bold text-amber-900 mb-1">
+                  {level.name}
                 </h3>
-                <p className="text-amber-700 text-sm">{level.subtitle}</p>
-                <p className="text-amber-600 text-xs mt-1">
-                  {level.locked ? `${level.description} (tienes ${xp})` : level.description}
+                <p className="text-amber-700 text-base">
+                  {level.locked ? `${level.description} (tienes ${xp})` : level.subtitle}
                 </p>
               </div>
               {!level.locked && (
