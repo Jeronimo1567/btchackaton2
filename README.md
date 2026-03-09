@@ -2,7 +2,7 @@
 
 Aprende los conceptos fundamentales de Bitcoin jugando la clásica Lotería mexicana.
 
-**[Jugar ahora](https://loteria-bitcoin.vercel.app)**
+**[Jugar ahora](https://loteriabitcoin.vercel.app)**
 
 ## Qué es
 
