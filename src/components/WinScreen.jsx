@@ -21,8 +21,8 @@ export default function WinScreen({ stats, encounteredCards, onRestart, xp, onGo
       <div className="flex-1 flex items-center justify-center px-4 py-8">
         <div className="text-center animate-slideInUp max-w-lg w-full">
           <h1 style={{ ...FONT_SERIF, textShadow: '3px 3px 6px rgba(0,0,0,0.5)' }}
-              className="text-5xl sm:text-7xl font-black text-yellow-400 mb-2">LOTERIA!</h1>
-          <p className="text-amber-200 text-xl mb-6">Felicidades, ganaste!</p>
+              className="text-5xl sm:text-7xl font-black text-yellow-400 mb-2">¡LOTERÍA!</h1>
+          <p className="text-amber-200 text-xl mb-6">¡Felicidades, ganaste!</p>
 
           <div className="caller-card rounded-xl p-5 mb-6 max-h-60 overflow-y-auto scrollbar-hide">
             <h3 style={FONT_SERIF} className="text-lg font-bold text-amber-900 mb-3">Conceptos aprendidos</h3>

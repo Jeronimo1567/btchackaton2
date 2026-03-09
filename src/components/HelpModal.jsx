@@ -8,20 +8,20 @@ export default function HelpModal({ onClose }) {
            aria-label="Instrucciones del juego"
            onClick={e => e.stopPropagation()}>
         <div className="flex justify-between items-center mb-4">
-          <h2 style={FONT_SERIF} className="text-2xl font-bold text-amber-900">Como se juega</h2>
+          <h2 style={FONT_SERIF} className="text-2xl font-bold text-amber-900">Cómo se juega</h2>
           <button onClick={onClose} className="text-2xl text-amber-900 hover:text-red-700 font-bold" aria-label="Cerrar instrucciones">Cerrar</button>
         </div>
         <div className="space-y-4 text-amber-950 text-sm leading-relaxed">
-          <p><strong>Loteria Bitcoin</strong> es un juego donde aprendes sobre Bitcoin jugando la tradicional Loteria Mexicana.</p>
+          <p><strong>Lotería Bitcoin</strong> es un juego donde aprendes sobre Bitcoin jugando la tradicional Lotería Mexicana.</p>
 
           <p><strong>Tu tabla:</strong></p>
-          <p>Al empezar, recibes una tabla de 4x4 con 16 cartas al azar de un mazo de 36 conceptos de Bitcoin.</p>
+          <p>Al empezar, recibes una tabla de 3x3 con 9 cartas al azar de un mazo de 29 conceptos de Bitcoin.</p>
 
           <p><strong>El cantador:</strong></p>
-          <p>Las cartas se van anunciando una por una al azar. Si la carta que se canta esta en tu tabla, se ilumina y puedes hacer clic en ella para responder una pregunta.</p>
+          <p>Las cartas se van anunciando una por una al azar. Si la carta que se canta está en tu tabla, se ilumina y puedes hacer clic en ella para responder una pregunta.</p>
 
-          <p><strong>Si la carta NO esta en tu tabla:</strong></p>
-          <p>Puedes leer la definicion del concepto para ir aprendiendo. No pierdes nada.</p>
+          <p><strong>Si la carta NO está en tu tabla:</strong></p>
+          <p>Puedes leer la definición del concepto para ir aprendiendo. No pierdes nada.</p>
 
           <p><strong>Preguntas y XP:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-2">
@@ -30,7 +30,7 @@ export default function HelpModal({ onClose }) {
             <li>Si fallas las 2 veces: la tabla se reinicia con cartas nuevas (mismo nivel) y sigues jugando.</li>
           </ul>
 
-          <p><strong>Como ganar:</strong></p>
+          <p><strong>Cómo ganar:</strong></p>
           <p>Completa una fila, columna, diagonal o toda la tabla contestando correctamente. Al ganar, pasas al siguiente nivel.</p>
 
           <p><strong>Niveles:</strong></p>

@@ -18,17 +18,17 @@ export default function ResourcesScreen({ onGoHome }) {
             <ResourceItem
               title="The Bitcoin Standard"
               author="Saifedean Ammous"
-              description="El libro mas popular para entender por que Bitcoin es dinero duro. Explica la historia del dinero y por que Bitcoin es diferente."
+              description="El libro más popular para entender por qué Bitcoin es dinero duro. Explica la historia del dinero y por qué Bitcoin es diferente."
             />
             <ResourceItem
               title="Mastering Bitcoin"
               author="Andreas M. Antonopoulos"
-              description="Guia tecnica completa sobre como funciona Bitcoin. Ideal para quienes quieren entender la tecnologia a fondo."
+              description="Guía técnica completa sobre cómo funciona Bitcoin. Ideal para quienes quieren entender la tecnología a fondo."
             />
             <ResourceItem
               title="El patron Bitcoin"
-              author="Saifedean Ammous (edicion en espanol)"
-              description="La version en espanol de The Bitcoin Standard. Perfecto si prefieres leer en tu idioma."
+              author="Saifedean Ammous (edición en español)"
+              description="La versión en español de The Bitcoin Standard. Perfecto si prefieres leer en tu idioma."
             />
             <ResourceItem
               title="The Little Bitcoin Book"
@@ -43,11 +43,11 @@ export default function ResourcesScreen({ onGoHome }) {
           <div className="space-y-3">
             <ResourceItem
               title="BTC Sessions"
-              description="Tutoriales practicos sobre como usar Bitcoin, wallets, Lightning Network y mas."
+              description="Tutoriales prácticos sobre cómo usar Bitcoin, wallets, Lightning Network y más."
             />
             <ResourceItem
               title="Lunaticoin"
-              description="Canal en espanol con noticias, analisis y educacion sobre Bitcoin."
+              description="Canal en español con noticias, análisis y educación sobre Bitcoin."
             />
             <ResourceItem
               title="What Bitcoin Did"
@@ -55,21 +55,21 @@ export default function ResourcesScreen({ onGoHome }) {
             />
             <ResourceItem
               title="Bitcoin para todos"
-              description="Contenido educativo en espanol para principiantes."
+              description="Contenido educativo en español para principiantes."
             />
           </div>
         </section>
 
         <section className="mb-8">
-          <h2 style={FONT_SERIF} className="text-2xl font-bold text-amber-200 mb-4">Como empezar a comprar Bitcoin</h2>
+          <h2 style={FONT_SERIF} className="text-2xl font-bold text-amber-200 mb-4">Cómo empezar a comprar Bitcoin</h2>
           <div className="caller-card rounded-xl p-5">
             <ol className="space-y-3 text-amber-900 text-sm list-decimal list-inside">
-              <li><strong>Educate primero</strong> -- Aprende los conceptos basicos (como los que ves en este juego) antes de invertir dinero.</li>
-              <li><strong>Elige un exchange confiable</strong> -- Plataformas como Bitso (Mexico), Binance o Kraken te permiten comprar bitcoin con pesos o dolares.</li>
-              <li><strong>Verifica tu identidad</strong> -- Los exchanges requieren una identificacion oficial para cumplir con regulaciones.</li>
-              <li><strong>Empieza con poco</strong> -- No necesitas comprar un bitcoin entero. Puedes empezar con tan solo 100 pesos en satoshis.</li>
-              <li><strong>Mueve tus bitcoin a tu propia wallet</strong> -- Descarga una wallet como Muun, Blue Wallet o Phoenix para tener autocustodia.</li>
-              <li><strong>Guarda tu seed phrase</strong> -- Escribe las 12 o 24 palabras en papel y guardalas en un lugar seguro. Nunca las compartas.</li>
+              <li><strong>Edúcate primero</strong> — Aprende los conceptos básicos (como los que ves en este juego) antes de invertir dinero.</li>
+              <li><strong>Elige un exchange confiable</strong> — Plataformas como Bitso (México), Binance o Kraken te permiten comprar bitcoin con pesos o dólares.</li>
+              <li><strong>Verifica tu identidad</strong> — Los exchanges requieren una identificación oficial para cumplir con regulaciones.</li>
+              <li><strong>Empieza con poco</strong> — No necesitas comprar un bitcoin entero. Puedes empezar con tan solo 100 pesos en satoshis.</li>
+              <li><strong>Mueve tus bitcoin a tu propia wallet</strong> — Descarga una wallet como Muun, Blue Wallet o Phoenix para tener autocustodia.</li>
+              <li><strong>Guarda tu seed phrase</strong> — Escribe las 12 o 24 palabras en papel y guárdalas en un lugar seguro. Nunca las compartas.</li>
             </ol>
           </div>
         </section>

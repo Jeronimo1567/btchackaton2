@@ -1,7 +1,7 @@
 export const CARD_DECK = [
   {
     id: 1, name: "El Bitcoin", icon: "₿",
-    image: "images/el bitcoin.png", audio: "audio/el bitcoin.mp3",
+    image: "/images/el bitcoin.png", audio: "/audio/el bitcoin.mp3",
     riddle: "Dinero sin banco, libre y digital,\nuna red lo respalda de forma global.\n¡El Bitcoin!",
     question: "¿Quién controla la red de Bitcoin?",
     options: [
@@ -17,7 +17,7 @@ export const CARD_DECK = [
   },
   {
     id: 2, name: "El Satoshi", icon: "sat",
-    image: "images/el satoshi.png", audio: "audio/el satoshi.mp3",
+    image: "/images/el satoshi.png", audio: "/audio/el satoshi.mp3",
     riddle: "Tan pequeño como un grano de arena,\npero poderoso, su nombre resuena.\n¡El Satoshi!",
     question: "¿En cuántas partes se puede dividir un bitcoin?",
     options: [
@@ -33,7 +33,7 @@ export const CARD_DECK = [
   },
   {
     id: 3, name: "La Blockchain", icon: "⛓️",
-    image: "images/la blockchain.png", audio: "audio/La blockchain.mp3",
+    image: "/images/la blockchain.png", audio: "/audio/La blockchain.mp3",
     riddle: "Libro gigante que todos pueden ver,\nbloques encadenados que nadie ha de romper.\n¡La Blockchain!",
     question: "¿Qué es la blockchain de Bitcoin?",
     options: [
@@ -49,7 +49,7 @@ export const CARD_DECK = [
   },
   {
     id: 4, name: "El Bloque", icon: "🧱",
-    image: "images/el bloque.png", audio: "audio/el bloque.mp3",
+    image: "/images/el bloque.png", audio: "/audio/el bloque.mp3",
     riddle: "Ladrillo a ladrillo se va construyendo,\ntransacciones guarda, cadenas tejiendo.\n¡El Bloque!",
     question: "¿Qué contiene un bloque en la red de Bitcoin?",
     options: [
@@ -65,7 +65,7 @@ export const CARD_DECK = [
   },
   {
     id: 5, name: "La Transacción", icon: "💸",
-    image: "images/la transaccion.png", audio: "audio/la transaccion.mp3",
+    image: "/images/la transaccion.png", audio: "/audio/la transaccion.mp3",
     riddle: "De una dirección a otra viaja el valor,\nfirmada y sellada con todo rigor.\n¡La Transacción!",
     question: "¿Qué sucede cuando se hace una transacción de Bitcoin?",
     options: [
@@ -81,7 +81,7 @@ export const CARD_DECK = [
   },
   {
     id: 6, name: "El Minero", icon: "⛏️",
-    image: "images/el minero.png", audio: "audio/el_minero.mp3",
+    image: "/images/el minero.png", audio: "/audio/el_minero.mp3",
     riddle: "Con sudor digital y poder de cómputo,\nbusca el número mágico, ¡nunca está difunto!\n¡El Minero!",
     question: "¿Qué hacen los mineros en la red de Bitcoin?",
     options: [
@@ -97,7 +97,7 @@ export const CARD_DECK = [
   },
   {
     id: 7, name: "El Hashrate", icon: "#",
-    image: "images/el hashrate.png", audio: "audio/el hashrate.mp3",
+    image: "/images/el hashrate.png", audio: "/audio/el hashrate.mp3",
     riddle: "Fuerza bruta de millones de máquinas,\nprotegiendo la red con sus rutinas.\n¡El Hashrate!",
     question: "¿Qué representa el hashrate en la red de Bitcoin?",
     options: [
@@ -113,7 +113,7 @@ export const CARD_DECK = [
   },
   {
     id: 8, name: "El Nodo", icon: "🖧",
-    image: "images/el nodo.png", audio: "audio/el nodo.mp3",
+    image: "/images/el nodo.png", audio: "/audio/el nodo.mp3",
     riddle: "Centinela de la red, vigila sin cesar,\ninformación comparte sin cobrar.\n¡El Nodo!",
     question: "¿Qué función cumple un nodo en la red de Bitcoin?",
     options: [
@@ -129,7 +129,7 @@ export const CARD_DECK = [
   },
   {
     id: 9, name: "La Dificultad", icon: "📈",
-    image: "images/la dificultad.png", audio: "audio/la dificultad.mp3",
+    image: "/images/la dificultad.png", audio: "/audio/la dificultad.mp3",
     riddle: "Sube y baja como la marea,\npara que el bloque a tiempo se crea.\n¡La Dificultad!",
     question: "¿Para qué sirve el ajuste de dificultad en Bitcoin?",
     options: [
@@ -145,7 +145,7 @@ export const CARD_DECK = [
   },
   {
     id: 10, name: "El Halving", icon: "✂️",
-    image: "images/el halving.png", audio: "audio/el halving.mp3",
+    image: "/images/el halving.png", audio: "/audio/el halving.mp3",
     riddle: "Cada cuatro años la recompensa se parte,\ny el bitcoin escasea, ¡es todo un arte!\n¡El Halving!",
     question: "¿Qué ocurre durante un halving en la red de Bitcoin?",
     options: [
@@ -161,7 +161,7 @@ export const CARD_DECK = [
   },
   {
     id: 11, name: "Los 21 Millones", icon: "21M",
-    image: "images/los 21 m.png", audio: "audio/los 21 millones.mp3",
+    image: "/images/los 21 m.png", audio: "/audio/los 21 millones.mp3",
     riddle: "Veintiún millones y ni uno más,\nescasez digital que no tiene igual.\n¡Los 21 Millones!",
     question: "¿Cuál es el límite máximo de bitcoins que existirán?",
     options: [
@@ -177,7 +177,7 @@ export const CARD_DECK = [
   },
   {
     id: 12, name: "La Firma Digital", icon: "✍️",
-    image: "images/la firma digital.png", audio: "audio/la firma digital.mp3",
+    image: "/images/la firma digital.png", audio: "/audio/la firma digital.mp3",
     riddle: "Sin pluma ni papel, tu identidad sella,\ncon matemáticas puras, tu firma es bella.\n¡La Firma Digital!",
     question: "¿Para qué sirve la firma digital en una transacción?",
     options: [
@@ -193,7 +193,7 @@ export const CARD_DECK = [
   },
   {
     id: 13, name: "La Private Key", icon: "🔑",
-    image: "images/private key (2).png", audio: "audio/la private key.mp3",
+    image: "/images/private key (2).png", audio: "/audio/la private key.mp3",
     riddle: "Secreto guardado que nadie ha de ver,\nsin ella tus monedas no puedes mover.\n¡La Private Key!",
     question: "¿Por qué es tan importante proteger la clave privada?",
     options: [
@@ -209,7 +209,7 @@ export const CARD_DECK = [
   },
   {
     id: 14, name: "La Public Key", icon: "🔓",
-    image: "images/public key.png", audio: "audio/la public key.mp3",
+    image: "/images/public key.png", audio: "/audio/la public key.mp3",
     riddle: "De lo secreto nace lo visible,\ncomprobar sin gastar, eso es posible.\n¡La Public Key!",
     question: "¿Qué permite hacer la clave pública de Bitcoin?",
     options: [
@@ -225,7 +225,7 @@ export const CARD_DECK = [
   },
   {
     id: 15, name: "La Seed Phrase", icon: "🌱",
-    image: "images/seed phrase.png", audio: "audio/la seed phrase.mp3",
+    image: "/images/seed phrase.png", audio: "/audio/la seed phrase.mp3",
     riddle: "Doce palabras mágicas que guardan tu tesoro,\nsi las pierdes, adiós a tu oro.\n¡La Seed Phrase!",
     question: "¿Para qué se utiliza la seed phrase en Bitcoin?",
     options: [
@@ -241,7 +241,7 @@ export const CARD_DECK = [
   },
   {
     id: 16, name: "La Cartera Fría", icon: "🧊",
-    image: "images/cartera fria.png", audio: "audio/la cartera fria.mp3",
+    image: "/images/cartera fria.png", audio: "/audio/la cartera fria.mp3",
     riddle: "Sin conexión al mundo, tus claves protege,\nen frío y en silencio, tu tesoro recoge.\n¡La Cartera Fría!",
     question: "¿Qué hace especial a una cartera fría de Bitcoin?",
     options: [
@@ -257,7 +257,7 @@ export const CARD_DECK = [
   },
   {
     id: 17, name: "Lightning Network", icon: "⚡",
-    image: "images/lightning.png", audio: "audio/la lightning network.mp3",
+    image: "/images/lightning.png", audio: "/audio/la lightning network.mp3",
     riddle: "Veloz como relámpago, pago instantáneo,\nmicrotransacciones sin ningún engaño.\n¡Lightning!",
     question: "¿Cuál es la ventaja principal de la Lightning Network?",
     options: [
@@ -273,7 +273,7 @@ export const CARD_DECK = [
   },
   {
     id: 18, name: "Las Fees", icon: "🏷️",
-    image: "images/Las Fees.png", audio: "audio/las fees.mp3",
+    image: "/images/Las Fees.png", audio: "/audio/las fees.mp3",
     riddle: "Pago al minero por su dedicación,\nquien más ofrece, tiene priorización.\n¡Las Fees!",
     question: "¿Por qué existen comisiones en las transacciones de Bitcoin?",
     options: [
@@ -289,7 +289,7 @@ export const CARD_DECK = [
   },
   {
     id: 19, name: "La Descentralización", icon: "🌐",
-    image: "images/descentralizacion.png", audio: "audio/la descentralizacion.mp3",
+    image: "/images/descentralizacion.png", audio: "/audio/la descentralizacion.mp3",
     riddle: "Sin rey ni corona que mande el destino,\nmiles de nodos trazan el camino.\n¡La Descentralización!",
     question: "¿Qué significa que la red de Bitcoin sea descentralizada?",
     options: [
@@ -305,7 +305,7 @@ export const CARD_DECK = [
   },
   {
     id: 20, name: "La Inmutabilidad", icon: "🪨",
-    image: "images/la inmulabilidad.png", audio: "audio/la inmutabilidad.mp3",
+    image: "/images/la inmulabilidad.png", audio: "/audio/la inmutabilidad.mp3",
     riddle: "Lo escrito, escrito está, nadie lo puede borrar,\ncomo piedra tallada, por siempre va a quedar.\n¡La Inmutabilidad!",
     question: "¿Por qué es casi imposible modificar una transacción ya confirmada?",
     options: [
@@ -321,7 +321,7 @@ export const CARD_DECK = [
   },
   {
     id: 21, name: "Resistencia a la Censura", icon: "🛡️",
-    image: "images/resistencia a la censura.png", audio: "audio/la resistencia a la censura.mp3",
+    image: "/images/resistencia a la censura.png", audio: "/audio/la resistencia a la censura.mp3",
     riddle: "Ni gobierno ni empresa tu envío detendrá,\nmientras sigas las reglas, nadie te parará.\n¡Resistencia a la censura!",
     question: "¿Qué significa la resistencia a la censura en Bitcoin?",
     options: [
@@ -337,7 +337,7 @@ export const CARD_DECK = [
   },
   {
     id: 22, name: "La Autocustodia", icon: "🏦",
-    image: "images/la autocustodia.png", audio: "audio/la autocustodia.mp3",
+    image: "/images/la autocustodia.png", audio: "/audio/la autocustodia.mp3",
     riddle: "Tu dinero en tus manos, sin pedir permiso,\nni banco ni gobierno pueden darte un aviso.\n¡La Autocustodia!",
     question: "¿Qué diferencia la autocustodia de usar un banco tradicional?",
     options: [
@@ -353,7 +353,7 @@ export const CARD_DECK = [
   },
   {
     id: 23, name: "El Cypherpunk", icon: "🕶️",
-    image: "images/El Cypherpunk.png", audio: "audio/el cypherpunk.mp3",
+    image: "/images/El Cypherpunk.png", audio: "/audio/el cypherpunk.mp3",
     riddle: "Rebeldes digitales con código y razón,\nprivacidad y libertad, su gran misión.\n¡El Cypherpunk!",
     question: "¿Qué defendían los cypherpunks antes de que existiera Bitcoin?",
     options: [
@@ -369,7 +369,7 @@ export const CARD_DECK = [
   },
   {
     id: 24, name: "HODL", icon: "💎",
-    image: "images/hodl.png", audio: "audio/el hodl.mp3",
+    image: "/images/hodl.png", audio: "/audio/el hodl.mp3",
     riddle: "Comprar y guardar sin vender jamás,\npaciencia de hierro que rinde de más.\n¡HODL!",
     question: "¿En qué consiste la estrategia conocida como HODL?",
     options: [
@@ -385,7 +385,7 @@ export const CARD_DECK = [
   },
   {
     id: 25, name: "Bear Market", icon: "🐻",
-    image: "images/bear market.png", audio: "audio/el bear market.mp3",
+    image: "/images/bear market.png", audio: "/audio/el bear market.mp3",
     riddle: "El oso ruge y el precio se cae,\nmiedo y malas noticias, todo se deshace.\n¡El Bear Market!",
     question: "¿Qué caracteriza a un bear market en el mundo Bitcoin?",
     options: [
@@ -401,7 +401,7 @@ export const CARD_DECK = [
   },
   {
     id: 26, name: "Bull Market", icon: "🐂",
-    image: "images/bull market.png", audio: "audio/el bull market.mp3",
+    image: "/images/bull market.png", audio: "/audio/el bull market.mp3",
     riddle: "El toro embiste y el precio se eleva,\neuforia y entusiasmo, la manada se lleva.\n¡El Bull Market!",
     question: "¿Qué sucede durante un bull market de Bitcoin?",
     options: [
@@ -417,7 +417,7 @@ export const CARD_DECK = [
   },
   {
     id: 27, name: "Proof of Work", icon: "💪",
-    image: "images/proof of work.png", audio: "audio/proofofwork.mp3",
+    image: "/images/proof of work.png", audio: "/audio/proofofwork.mp3",
     riddle: "Sudor y energía el minero invierte,\npara asegurar la red y hacerla fuerte.\n¡Proof of Work!",
     question: "¿Qué protege el mecanismo de prueba de trabajo?",
     options: [
@@ -433,7 +433,7 @@ export const CARD_DECK = [
   },
   {
     id: 28, name: "Satoshi Nakamoto", icon: "🎭",
-    image: "images/satoshi nakamoto.png", audio: null,
+    image: "/images/satoshi nakamoto.png", audio: null,
     riddle: "Nadie conoce su rostro ni su voz,\npero cambió el dinero con su atroz.\n¡Satoshi Nakamoto!",
     question: "¿Quién es Satoshi Nakamoto en la historia de Bitcoin?",
     options: [
@@ -449,7 +449,7 @@ export const CARD_DECK = [
   },
   {
     id: 29, name: "Michael Saylor", icon: "🏢",
-    image: "images/michael saylor.png", audio: "audio/el michael saylor.mp3",
+    image: "/images/michael saylor.png", audio: "/audio/el michael saylor.mp3",
     riddle: "Empresario convencido del oro digital,\ncon su empresa acumula de forma colosal.\n¡Michael Saylor!",
     question: "¿Por qué es conocido Michael Saylor en el mundo de Bitcoin?",
     options: [

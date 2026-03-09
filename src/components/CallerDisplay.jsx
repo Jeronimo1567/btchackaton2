@@ -47,7 +47,7 @@ export default function CallerDisplay({ card, callerKey, calledCount, isSpeaking
 
       {calledCount > 0 && (
         <p className="text-amber-400 text-xs mt-3 text-center">
-          Tambien puedes hacer clic en cartas ya cantadas.
+          También puedes hacer clic en cartas ya cantadas.
         </p>
       )}
     </div>

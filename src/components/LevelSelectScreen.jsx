@@ -4,7 +4,7 @@ import Header from './Header';
 
 export default function LevelSelectScreen({ onSelectLevel, onGoHome, xp, onGoToResources }) {
   const levels = [
-    { id: 1, name: "Principiante", subtitle: "Conceptos basicos", locked: false, description: "36 cartas de Bitcoin", xpNeeded: 0 },
+    { id: 1, name: "Principiante", subtitle: "Conceptos básicos", locked: false, description: "29 cartas de Bitcoin", xpNeeded: 0 },
     { id: 2, name: "Intermedio", subtitle: "Conceptos avanzados", locked: xp < XP_LEVEL_2, description: `Necesitas ${XP_LEVEL_2} XP`, xpNeeded: XP_LEVEL_2 },
     { id: 3, name: "Avanzado", subtitle: "Experto en Bitcoin", locked: xp < XP_LEVEL_3, description: `Necesitas ${XP_LEVEL_3} XP`, xpNeeded: XP_LEVEL_3 }
   ];

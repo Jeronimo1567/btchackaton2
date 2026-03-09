@@ -79,7 +79,7 @@ export default function QuizModal({ card, onAnswer }) {
                     Intentar de nuevo
                   </button>
                 ) : (
-                  <p className="text-xs text-red-800">Sin intentos. Empezaras de nuevo con una tabla nueva.</p>
+                  <p className="text-xs text-red-800">Sin intentos. Empezarás de nuevo con una tabla nueva.</p>
                 )}
               </>
             )}

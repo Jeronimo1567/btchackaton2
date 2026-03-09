@@ -52,18 +52,18 @@ export default function LessonScreen({ onFinish, onGoHome }) {
         <Header onGoHome={onGoHome} />
         <div className="flex-1 flex items-center justify-center px-4 py-6">
           <div className="caller-card rounded-xl p-6 sm:p-8 max-w-md w-full text-center animate-slideInUp">
-            <h2 style={FONT_SERIF} className="text-2xl sm:text-3xl font-bold text-amber-900 mb-4">Bienvenido a Loteria Bitcoin</h2>
+            <h2 style={FONT_SERIF} className="text-2xl sm:text-3xl font-bold text-amber-900 mb-4">Bienvenido a Lotería Bitcoin</h2>
             <div className="text-amber-800 text-sm leading-relaxed text-left space-y-3 mb-6" style={FONT_SERIF}>
-              <p>Estas a punto de aprender los conceptos mas importantes de Bitcoin a traves de la tradicional Loteria Mexicana.</p>
-              <p><strong>Primero, te vamos a enseñar los 29 conceptos</strong> que forman el mazo de cartas. Leelos con atencion porque despues te preguntaremos sobre ellos en el juego.</p>
-              <p><strong>Asi funciona el juego:</strong></p>
+              <p>Estás a punto de aprender los conceptos más importantes de Bitcoin a través de la tradicional Lotería Mexicana.</p>
+              <p><strong>Primero, te vamos a enseñar los 29 conceptos</strong> que forman el mazo de cartas. Léelos con atención porque después te preguntaremos sobre ellos en el juego.</p>
+              <p><strong>Así funciona el juego:</strong></p>
               <ul className="list-disc list-inside space-y-1 ml-2">
                 <li>Recibes una tabla de 9 cartas al azar.</li>
                 <li>Un cantador anuncia cartas. Si la tienes, respondes una pregunta.</li>
                 <li>Correcta: ganas +{XP_CORRECT} XP y marcas la carta.</li>
                 <li>Incorrecta: pierdes -{XP_WRONG} XP. Tienes 2 intentos.</li>
                 <li>Si fallas 2 veces, la tabla se reinicia con cartas nuevas.</li>
-                <li>Completa una linea (fila, columna o diagonal) para ganar.</li>
+                <li>Completa una línea (fila, columna o diagonal) para ganar.</li>
               </ul>
               <p>Si un concepto no te queda claro durante las lecciones, puedes marcarlo para repasarlo al final.</p>
             </div>

@@ -3,3 +3,8 @@ dist
 .DS_Store
 .vercel
 .claude
+.env
+.env.local
+.env.*.local
+*.pem
+*.key

@@ -38,21 +38,21 @@ export default function StartScreen({ onStart, xp }) {
 
           <div className="flex-shrink-0 flex items-end" style={{ gap: '-8px' }}>
             <img
-              src="images/el minero.png"
+              src="/images/el minero.png"
               alt="El Minero - Carta de Lotería Bitcoin"
               className="w-20 sm:w-28 lg:w-36 rounded-lg shadow-2xl border-2 border-white/15 transition-all duration-300 hover:-translate-y-2"
               style={{ transform: 'rotate(-6deg)', marginRight: '-10px', zIndex: 1 }}
               draggable={false}
             />
             <img
-              src="images/satoshi nakamoto.png"
+              src="/images/satoshi nakamoto.png"
               alt="Satoshi Nakamoto - Carta de Lotería Bitcoin"
               className="w-24 sm:w-32 lg:w-44 rounded-lg shadow-2xl border-2 border-amber-400/40 transition-all duration-300 hover:-translate-y-2"
               style={{ transform: 'translateY(-8px)', zIndex: 2 }}
               draggable={false}
             />
             <img
-              src="images/michael saylor.png"
+              src="/images/michael saylor.png"
               alt="Michael Saylor - Carta de Lotería Bitcoin"
               className="w-20 sm:w-28 lg:w-36 rounded-lg shadow-2xl border-2 border-white/15 transition-all duration-300 hover:-translate-y-2"
               style={{ transform: 'rotate(6deg)', marginLeft: '-10px', zIndex: 1 }}

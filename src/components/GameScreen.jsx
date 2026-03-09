@@ -250,7 +250,7 @@ export default function GameScreen({ onWin, onGoHome, xp, onXPChange, onGoToLess
             <div className="mx-auto mt-4 w-full max-w-md space-y-3">
               {showNextHint && (
                 <div className="rounded-lg border border-amber-300 bg-amber-100 px-4 py-3 text-sm text-amber-900 animate-fadeIn">
-                  Si la carta presentada no esta en tu loteria, puedes aprender el termino y seguir con la siguiente carta.
+                  Si la carta presentada no está en tu lotería, puedes aprender el término y seguir con la siguiente carta.
                 </div>
               )}
               <button
