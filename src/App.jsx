@@ -36,15 +36,15 @@ export default function App() {
 
   switch (screen) {
     case 'start':
-      return <StartScreen onStart={handleStart} xp={xp} onGoToResources={handleGoToResources} />;
+      return <StartScreen onStart={handleStart} xp={xp} />;
     case 'lessons':
-      return <LessonScreen onFinish={handleLessonsFinish} />;
+      return <LessonScreen onFinish={handleLessonsFinish} onGoHome={handleGoHome} />;
     case 'levelSelect':
       return <LevelSelectScreen onSelectLevel={handleSelectLevel} onGoHome={handleGoHome} xp={xp} onGoToResources={handleGoToResources} />;
     case 'game':
       return <GameScreen onWin={handleWin} onGoHome={handleGoHome} xp={xp} onXPChange={handleXPChange} onGoToLessons={handleGoToLessons} />;
     case 'win':
-      return <WinScreen stats={winData.stats} encounteredCards={winData.encounteredCards} onRestart={handleGoHome} xp={xp} />;
+      return <WinScreen stats={winData.stats} encounteredCards={winData.encounteredCards} onRestart={handleGoHome} xp={xp} onGoHome={handleGoHome} />;
     case 'resources':
       return <ResourcesScreen onGoHome={handleGoHome} />;
     default:

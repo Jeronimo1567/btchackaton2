@@ -1,17 +1,13 @@
 import { FONT_SERIF, BG_STYLE } from '../data/config';
 import Footer from './Footer';
+import Header from './Header';
 
 export default function ResourcesScreen({ onGoHome }) {
   return (
-    <div className="min-h-screen flex flex-col papel-picado grain-overlay relative" style={BG_STYLE}>
-      <div className="flex-1 px-4 py-8 max-w-2xl mx-auto w-full">
-        <button
-          onClick={onGoHome}
-          className="text-amber-400 hover:text-amber-200 text-sm underline underline-offset-4 transition-colors mb-8 block"
-        >
-          Volver al inicio
-        </button>
+    <div className="min-h-screen flex flex-col grain-overlay relative" style={BG_STYLE}>
+      <Header onGoHome={onGoHome} />
 
+      <div className="flex-1 px-4 py-8 max-w-2xl mx-auto w-full">
         <h1 style={FONT_SERIF} className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">
           Recursos para aprender Bitcoin
         </h1>
@@ -79,7 +75,7 @@ export default function ResourcesScreen({ onGoHome }) {
         </section>
       </div>
 
-      <Footer onGoToResources={() => {}} onGoHome={onGoHome} />
+      <Footer onGoToResources={() => {}} />
     </div>
   );
 }

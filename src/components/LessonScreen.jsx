@@ -2,8 +2,9 @@ import { useState, useMemo } from 'react';
 import { XP_CORRECT, XP_WRONG, FONT_SERIF, BG_STYLE } from '../data/config';
 import { CARD_DECK, LESSON_CHAPTERS } from '../data/cards';
 import CardVisual from './CardVisual';
+import Header from './Header';
 
-export default function LessonScreen({ onFinish }) {
+export default function LessonScreen({ onFinish, onGoHome }) {
   const [phase, setPhase] = useState('intro');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [reviewList, setReviewList] = useState([]);
@@ -47,16 +48,17 @@ export default function LessonScreen({ onFinish }) {
 
   if (phase === 'intro') {
     return (
-      <div className="min-h-screen flex flex-col papel-picado grain-overlay relative" style={BG_STYLE}>
+      <div className="min-h-screen flex flex-col grain-overlay relative" style={BG_STYLE}>
+        <Header onGoHome={onGoHome} />
         <div className="flex-1 flex items-center justify-center px-4 py-6">
           <div className="caller-card rounded-xl p-6 sm:p-8 max-w-md w-full text-center animate-slideInUp">
             <h2 style={FONT_SERIF} className="text-2xl sm:text-3xl font-bold text-amber-900 mb-4">Bienvenido a Loteria Bitcoin</h2>
             <div className="text-amber-800 text-sm leading-relaxed text-left space-y-3 mb-6" style={FONT_SERIF}>
               <p>Estas a punto de aprender los conceptos mas importantes de Bitcoin a traves de la tradicional Loteria Mexicana.</p>
-              <p><strong>Primero, te vamos a enseñar los 36 conceptos</strong> que forman el mazo de cartas. Leelos con atencion porque despues te preguntaremos sobre ellos en el juego.</p>
+              <p><strong>Primero, te vamos a enseñar los 29 conceptos</strong> que forman el mazo de cartas. Leelos con atencion porque despues te preguntaremos sobre ellos en el juego.</p>
               <p><strong>Asi funciona el juego:</strong></p>
               <ul className="list-disc list-inside space-y-1 ml-2">
-                <li>Recibes una tabla de 16 cartas al azar.</li>
+                <li>Recibes una tabla de 9 cartas al azar.</li>
                 <li>Un cantador anuncia cartas. Si la tienes, respondes una pregunta.</li>
                 <li>Correcta: ganas +{XP_CORRECT} XP y marcas la carta.</li>
                 <li>Incorrecta: pierdes -{XP_WRONG} XP. Tienes 2 intentos.</li>
@@ -77,16 +79,15 @@ export default function LessonScreen({ onFinish }) {
   if (!currentCard) return null;
 
   return (
-    <div className="min-h-screen flex flex-col papel-picado grain-overlay relative" style={BG_STYLE}>
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b-2 border-amber-900/50">
-        <h2 style={FONT_SERIF} className="text-lg font-bold text-yellow-400">
-          {reviewMode ? 'Repaso' : 'Lecciones Bitcoin'}
-        </h2>
+    <div className="min-h-screen flex flex-col grain-overlay relative" style={BG_STYLE}>
+      <Header onGoHome={onGoHome}>
+        <span className="text-amber-200 text-xs sm:text-sm">
+          {reviewMode ? 'Repaso' : 'Lecciones'}
+        </span>
         <button onClick={onFinish} className="btn-loteria-outline px-3 py-1 rounded-lg text-xs" aria-label="Saltar lecciones">
           Saltar
         </button>
-      </div>
+      </Header>
 
       {/* Progress bar */}
       <div className="px-4 pt-3">
@@ -109,7 +110,7 @@ export default function LessonScreen({ onFinish }) {
             <CardVisual card={currentCard} sizeClass="card-img-caller" />
           </div>
           <h3 style={FONT_SERIF} className="text-2xl sm:text-3xl font-bold text-amber-900 mb-1">{currentCard.name}</h3>
-          <p className="text-amber-600 text-xs mb-4">Carta {currentCard.id} de 36</p>
+          <p className="text-amber-600 text-xs mb-4">Carta {currentCard.id} de 29</p>
           <p className="text-amber-800 text-base leading-relaxed mb-6" style={FONT_SERIF}>{currentCard.leccion}</p>
 
           <div className="flex gap-3 justify-center flex-wrap">

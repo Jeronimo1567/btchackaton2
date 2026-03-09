@@ -1,4 +1,3 @@
-import { FONT_SERIF } from '../data/config';
 import CardVisual from './CardVisual';
 
 export default function LoteriaCard({ card, index, isMarked, isHighlighted, isCalled, isWinning, onClick }) {
@@ -6,7 +5,7 @@ export default function LoteriaCard({ card, index, isMarked, isHighlighted, isCa
   return (
     <button onClick={onClick}
       aria-label={`${card.name}${isMarked ? ' (marcada)' : ''}${clickable ? ' - clic para contestar' : ''}`}
-      className={`loteria-card rounded-lg flex flex-col items-center justify-center p-1 sm:p-2 relative
+      className={`loteria-card rounded-lg flex items-center justify-center p-0.5 relative overflow-hidden
         ${isHighlighted ? 'highlighted animate-pulse-gold' : ''}
         ${isCalled && !isHighlighted && !isMarked ? 'called-card' : ''}
         ${isMarked ? 'marked' : ''}
@@ -15,11 +14,6 @@ export default function LoteriaCard({ card, index, isMarked, isHighlighted, isCa
       style={{ aspectRatio: '3/4', width: '100%' }}>
 
       <CardVisual card={card} sizeClass="card-img-sm" />
-
-      <span className="text-amber-950 text-center leading-tight font-bold line-clamp-2"
-            style={{ ...FONT_SERIF, fontSize: 'clamp(0.5rem, 1.6vw, 0.65rem)' }}>
-        {card.name}
-      </span>
 
       {clickable && !isMarked && (
         <div className="absolute top-0.5 right-0.5 sm:top-1 sm:right-1">
