@@ -21,7 +21,8 @@ Lotería Bitcoin es un juego educativo interactivo que enseña Bitcoin a través
 
 - **React 18** + **Vite**
 - **Tailwind CSS** con animaciones CSS personalizadas
-- **HTML5 Audio API** para las voces del cantador
+- **ElevenLabs** para la generación de voces del cantador
+- **HTML5 Audio API** para la reproducción de audio
 - **localStorage** para persistencia de XP
 - Deploy en **Vercel**
 
